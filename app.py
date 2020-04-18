@@ -115,7 +115,6 @@ def login():
 def logout():
     """Handle logout of user."""
 
-    # IMPLEMENT THIS
     do_logout()
     flash("You've logged out successfully!", "success")
     return redirect('/login')
@@ -391,7 +390,8 @@ def homepage():
         queried_messages = (Message
                         .query
                         .filter(Message.user_id.in_(following))
-                        # only message ids if they're in [following_messages_ids]
+                        # only message ids if they're in 
+                        # [following_messages_ids]
                         .order_by(Message.timestamp.desc())
                         .limit(100)
                         .all())
