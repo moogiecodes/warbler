@@ -20,3 +20,8 @@ and not the users following page
 
 TO DO:
   - format icon image?
+    - way to UPLOAD avatar?
+  - star "like" color diff color somewhere else
+    - make star smaller
+  - check if liking other people's warbles has bugs
+    - maybe change redirecting on liking (not intuititive, should just re-render page with updated star?) 

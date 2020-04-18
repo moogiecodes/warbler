@@ -103,7 +103,7 @@ class User(db.Model):
         return len(found_user_list) == 1
 
     def is_following(self, other_user):
-        """Is this user following `other_use`?"""
+        """Is this user following `other_user`?"""
 
         found_user_list = [
             user for user in self.following if user == other_user]
@@ -132,8 +132,7 @@ class User(db.Model):
     def authenticate(cls, username, password):
         """Find user with `username` and `password`.
 
-        This is a class method (call it on the class, not an individual user.)
-        It searches for a user whose password hash matches this password
+        Searches for a user whose password hash matches this password
         and, if it finds such a user, returns that user object.
 
         If can't find matching user (or if password is wrong), returns False.
