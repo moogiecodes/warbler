@@ -52,3 +52,12 @@ To run a specific file:
 ```
 python -m unittest [name-of-file.py]
 ```
+
+## Technologies 
+- [Python3](https://docs.python.org/3/): backend server language
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/): Python framework
+- [Flask SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/): Flask extension to support SQLAlchemy
+- [Flask WTF](https://flask-wtf.readthedocs.io/en/stable/): Flask integration with WTForms
+- [psycopg2](https://pypi.org/project/psycopg2/): PostgreSQL database adapter for Python
+- [Jinja](https://palletsprojects.com/p/jinja/): Python template engine
+- [bcrypt](https://pypi.org/project/bcrypt/): password hashing
